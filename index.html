@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Paul Gluck | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f6f8;
+      color: #1c1f26;
+      line-height: 1.6;
+    }
+    header {
+      background: #cc0033; /* Rutgers scarlet */
+      color: #fff;
+      text-align: center;
+      padding: 56px 20px 48px;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-bottom: 20px;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 12px; }
+    header p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+    }
+    main { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    section { margin-bottom: 48px; }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      padding-bottom: 6px;
+      border-bottom: 3px solid #cc0033;
+      display: inline-block;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+    .tags li {
+      background: #fff;
+      border: 2px solid #cc0033;
+      color: #cc0033;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 999px;
+    }
+    .education li { margin-left: 20px; margin-bottom: 6px; }
+    .projects { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    .card h3 { margin-bottom: 8px; }
+    .card p { margin-bottom: 14px; }
+    .video { position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 14px; }
+    .video iframe {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0; border-radius: 8px;
+    }
+    .btn {
+      display: inline-block;
+      background: #cc0033;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .btn:hover { background: #99002a; }
+    footer { text-align: center; padding: 24px; color: #666; font-size: 0.9rem; }
+    @media (max-width: 480px) {
+      .projects { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <img src="headshot.jpg" alt="Headshot of John Paul Gluck">
+    <h1>John Paul Gluck | Rutgers Class of 2028</h1>
+    <p>At 20 years old I am a triple major at Rutgers, with I have four years of entrepreneurial experience, I am an eager learner who is passionate about personal development and success.</p>
+  </header>
+
+  <main>
+
+    <section id="education" class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Physics &ndash; Rutgers School of Arts and Sciences</li>
+        <li>Supply Chain Management &ndash; Rutgers Business School</li>
+        <li>Business Analytics &amp; Information Technology &ndash; Rutgers Business School</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>Entrepreneurship</li>
+        <li>Leadership</li>
+        <li>Grit</li>
+        <li>Excel</li>
+        <li>Python</li>
+        <li>Making Decisions Under Pressure</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <div class="card">
+          <h3>MacroAgent Demand Forecaster</h3>
+          <p>A demand forecasting tool built in Python to help small businesses predict demand and plan inventory with more confidence.</p>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/5ilV-JlWlio" title="MacroAgent Demand Forecaster demo" allowfullscreen></iframe>
+          </div>
+          <a class="btn" href="https://youtu.be/5ilV-JlWlio" target="_blank" rel="noopener">Watch on YouTube</a>
+        </div>
+
+        <div class="card">
+          <h3>CQUEST x Foundry Demo</h3>
+          <p>A demo of using Palantir's Foundry to run a start-up with the goal of ending climate change and making humans healthier.</p>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/YUOGMI9_IXs" title="CQUEST x Foundry demo" allowfullscreen></iframe>
+          </div>
+          <a class="btn" href="https://youtu.be/YUOGMI9_IXs" target="_blank" rel="noopener">Watch on YouTube</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>&copy; 2026 John Paul Gluck</footer>
+
+</body>
+</html>
